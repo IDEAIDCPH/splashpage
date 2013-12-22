@@ -15,9 +15,14 @@
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
 	<style>
 		html {
+			text-align:center;
+			box-sizing: border-box;
 			width: 100%; height: 100%;
 			background: #141414 url('/img/background.jpg') no-repeat center center;
 			background-size: cover;
+			padding: 10px;
+			-webkit-font-smoothing: antialiased;
+			font-smoothing: antialiased;
 		}
 
 		body {
@@ -37,7 +42,7 @@
 		}
 
 		.call-to-action {
-			background: #06d85f;
+			background: #47da54;
 			border-radius: 7px;
 			padding: 0 10px;
 
@@ -65,32 +70,52 @@
 		footer {
 			margin-top: 90px;
 		}
+		
+			footer small {
+				display: block;
+				font-size: 10px;
+				color: #555;
+			}
+
+			footer small a {
+				color: inherit;
+			}
 
 		.icon {
-			width: 18px; height: 18px;
-			margin: 18px;
+			width: 32px; height: 32px;
+			margin: 0 9px 18px 9px;
 			display: inline-block;
 
 			text-indent: 100%;
 			white-space: nowrap;
 			overflow: hidden;
+
+			background-size: cover;
+		}
+
+		.facebook-icon {
+			background-image: url(/img/facebook-icon@2x.png);	
+		}
+
+		.twitter-icon {
+			background-image: url(/img/twitter-icon@2x.png);	
 		}
 	</style>
 </head>
 <body>
 	<main>
-		<img src="/img/logo-small.png" alt="IDEAID">
+		<img src="/img/logo-small@2x.png" alt="IDEAID" width="151" height="66">
 		<h1>Donate your brain</h1>
 		<p>
-			... and compete to win 50,000 DKK. We're looking for the <br>
-			most innovative minds in within technology, design <br>
-			and ideation to help make the world a better place <br>
+			... and compete to win 50,000 DKK. We're looking for the
+			most innovative minds within software development, design
+			and ideation to help make the world a better place
 			from February 28<sup>th</sup> - March 2<sup>nd</sup>
 		</p>
 		<div class="call-to-action">
-			<a href="">GOOGLE</a>
+			<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org">GOOGLE</a>
 			or
-			<a href="">iCALENDAR</a>
+			<a href="/webcal/IDEAID.ics">iCALENDAR</a>
 		</div>
 		<footer>
 			<a href="http://fb.com/ideaidcph" class="icon facebook-icon" title="IDEAID on Facebook">
@@ -99,6 +124,9 @@
 			<a href="http://twitter.com/ideaidcph" class="icon twitter-icon" title="IDEAID on Twitter">
 				IDEAID on Twitter
 			</a>
+			<small>
+				Social media icons by <a href="https://www.iconfinder.com/phdieuli">phdieuli</a>
+			</small>
 		</footer>
 	</main>
 </body>
