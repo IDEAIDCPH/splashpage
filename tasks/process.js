@@ -1,11 +1,10 @@
 module.exports = function(grunt) {
 	'use strict';
 
-    grunt.registerTask('process', ['process:html', 'process:img', 'process:js', 'process:sass']);
+    grunt.registerTask('process', ['process:html', 'process:img', 'process:js', 'process:sass', 'process:webcal']);
 
 	grunt.registerTask('process:html', [
-        'preprocess:html', 
-        'htmlmin',
+        'preprocess:html',
         'copy:html'
     ]);
 	grunt.registerTask('process:img', [
@@ -22,5 +21,8 @@ module.exports = function(grunt) {
         'sass', 
         'preprocess:css', 
         'copy:css'
+    ]);
+    grunt.registerTask('process:webcal', [
+        'copy:webcal'
     ]);
 }

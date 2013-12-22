@@ -26,5 +26,12 @@ module.exports = {
 
         src:    '<%= files.css %>',
         dest:   '<%= dirs.dist.css %>'
+    },
+    webcal: {
+        expand: true,
+        cwd:    '<%= dirs.src.webcal %>',
+
+        src:    '<%= files.cal %>',
+        dest:   '<%= dirs.dist.webcal %>'
     }
 };

@@ -27,13 +27,17 @@ module.exports = function(grunt) {
                 sass: 'src/assets/sass/',
 
                 img: 'src/assets/img/',
-                js: 'src/assets/js/'
+                js: 'src/assets/js/',
+                webcal: 'src/assets/webcal/',
+                misc: 'src/assets/misc/'
             },
             dist: {
                 root: 'dist/',
                 css: 'dist/css/',
                 img: 'dist/img/',
-                js: 'dist/js/'
+                js: 'dist/js/',
+                webcal: 'dist/webcal/',
+                misc: 'dist/misc/'
             },
             tmp: {
                 root: 'tmp/',
@@ -51,7 +55,8 @@ module.exports = function(grunt) {
             sassPartial: '**/_*.{sass,scss}',
             css: '**/*.css',
             js: '**/*.js',
-            img: '**/*.{jpg,jpeg,png,ico,gif,svg}'
+            img: '**/*.{jpg,jpeg,png,ico,gif,svg}',
+            cal: '**/*.{ics,vcs}'
         }
     };
 
