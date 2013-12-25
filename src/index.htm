@@ -29,9 +29,7 @@
 			box-sizing: border-box;
 		}
 
-		html {
-			width: 100%; min-height: 100%;
-		}
+		html { width: 100%; min-height: 100%; }
 
 		body {
 			width: 100%; min-height: 100%;
@@ -54,20 +52,20 @@
 		}
 	
 		h1 {
-			font-size: 41px;
 			margin-bottom: 16px;
+
+			font-size: 41px;
 		}
-
+		
 		.call-to-action {
-			background: #47da54;
-			border-radius: 7px;
 			padding: 0 10px;
-
-
 			display: inline-block;
-			
+				
+			border-radius: 7px;
+			background: #47da54; 
+
 			color: #000;
-			font-size: 10px;
+			font-size: 14px;
 			line-height: 35px;
 			vertical-align: middle;
 		}
@@ -87,31 +85,19 @@
 		footer {
 			margin-top: 90px;
 		}
+		footer { margin-top: 90px; }
 		
 			footer small {
 				display: block;
-				font-size: 10px;
 				color: #444;
+				font-size: 10px;
 			}
 
-			footer small a {
-				color: inherit;
-			}
+			footer small a { color: inherit; }
 
 		.icon {
-			width: 32px; height: 32px;
 			margin: 0 9px 18px 9px;
 			display: inline-block;
-
-			text-indent: 100%;
-			white-space: nowrap;
-			overflow: hidden;
-
-			background-size: cover;
-		}
-
-		.facebook-icon {
-			background-image: url(/img/facebook-icon@2x.png);	
 		}
 		
 		.show-desktop, 
@@ -122,9 +108,6 @@
 		.is-mobile-chrome .show-mobile-chrome,
 		.is-mobile-safari .show-mobile-safari {display: inherit !important;}
 
-		.twitter-icon {
-			background-image: url(/img/twitter-icon@2x.png);	
-		}
 		.dont-break { white-space: nowrap; }
 	</style>
 </head>
@@ -138,6 +121,7 @@
 			and ideation to help make the world a better place
 			from <span class="dont-break">February 28<sup>th</sup> - March 2<sup>nd</sup></span>
 		</p>
+
 		<div class="call-to-action">
 			<span class="show-desktop">
 				<span class="slide-hover">Save the date</span>				
@@ -151,15 +135,12 @@
 	
 
 		<footer>
-			<a href="http://fb.com/ideaidcph" class="icon facebook-icon" title="IDEAID on Facebook">
-				IDEAID on Facebook
+			<a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook">
+				<img src="/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="32" height="32">
 			</a>
-			<a href="http://twitter.com/ideaidcph" class="icon twitter-icon" title="IDEAID on Twitter">
-				IDEAID on Twitter
+			<a href="http://twitter.com/ideaidcph" class="icon" title="IDEAID on Twitter">
+				<img src="/img/twitter-icon@2x.png" alt="IDEAID on Twitter" width="32" height="32">
 			</a>
-			<small>
-				Social media icons by <a href="https://www.iconfinder.com/phdieuli">phdieuli</a>
-			</small>
 		</footer>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.7/fastclick.min.js"></script>
 	</main>
