@@ -1,4 +1,4 @@
 Attribution
 ===========
 Background unknown. Please get in touch if you recognise this image
-Social media icons by [phdieuli](https://www.iconfinder.com/phdieuli), CC 3.0 Attribution
+Modified from social media icons by [Neil Hainsworth](http://neilorangepeel.com/free-social-icons/), Free for commercial use
