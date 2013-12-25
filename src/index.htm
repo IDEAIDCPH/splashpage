@@ -21,6 +21,7 @@
 			 if(isDesktop()) 	  htmlElm.className += 'is-desktop';
 		else if(isMobileChrome()) htmlElm.className += 'is-mobile-chrome';
 		else if(isMobileSafari()) htmlElm.className += 'is-mobile-safari';
+		else 					  htmlElm.className += 'device-fallback';
 	</script>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Doppio+One">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
@@ -115,14 +116,6 @@
 			.call-to-action a:hover { text-decoration: none; }
 
 		footer { margin-top: 90px; }
-		
-			footer small {
-				display: block;
-				color: #444;
-				font-size: 10px;
-			}
-
-			footer small a { color: inherit; }
 
 		.icon {
 			margin: 0 9px 18px 9px;
@@ -131,12 +124,14 @@
 		
 		.show-desktop, 
 		.show-mobile-chrome, 
-		.show-mobile-safari {display: none !important;}
+		.show-mobile-safari,
+		.device-fallback .slide-hover {display: none !important;}
 		
 		.is-desktop .show-desktop,
 		.is-mobile-chrome .show-mobile-chrome,
-		.is-mobile-safari .show-mobile-safari {display: inherit !important;}
-
+		.is-mobile-safari .show-mobile-safari,
+		.device-fallback .show-desktop {display: inherit !important;}
+	
 		.dont-break { white-space: nowrap; }
 	</style>
 </head>
