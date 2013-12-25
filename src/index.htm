@@ -12,6 +12,8 @@
 	<![endif]-->
 
 	<script>
+		var hover = false;
+
 		function isDesktop() { 	return !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/); }
 		function isMobileSafari() { return navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/); }
 		function isMobileChrome() { return navigator.userAgent.match('CriOS') || navigator.userAgent.match(/Chrome\/[0-9\.]+ Mobile/); }
@@ -148,13 +150,13 @@
 
 		<div class="call-to-action">
 			<span class="show-desktop">
-				<span class="slide-hover">Save the date</span>				
-				<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org">GOOGLE</a>
+				<span class="slide-hover" onmouseover="if(!hover) _gaq.push(['_trackEvent', 'Calendar', 'Hover (Desktop)']); hover = true;">Save the date</span>				
+				<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Desktop)', 'Google']);">GOOGLE</a>
 				<em>or</em>
-				<a href="/webcal/IDEAID.ics">iCALENDAR</a>
+				<a href="/webcal/IDEAID.ics" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Desktop)', 'iCalendar']);">iCALENDAR</a>
 			</span>
-			<a class="show-mobile-chrome" href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org">Save the date</a>
-			<a class="show-mobile-safari" href="/webcal/IDEAID.ics">Save the date</a>
+			<a class="show-mobile-chrome" href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Mobile Chrome)', 'Google']);">Save the date</a>
+			<a class="show-mobile-safari" href="/webcal/IDEAID.ics" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Mobile Safari)', 'Google']);">Save the date</a>
 		</div>
 	
 
@@ -167,6 +169,15 @@
 			</a>
 		</footer>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.7/fastclick.min.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-46707863-1', 'ideaid.org');
+		  ga('send', 'pageview');
+		</script>
 	</main>
 </body>
 </html>
