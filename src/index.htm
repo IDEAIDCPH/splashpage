@@ -34,11 +34,12 @@
 			-webkit-transition-timing-function: ease-in-out;
 		}
 
-		html { width: 100%; min-height: 100%; }
+		html { width: 100%; height: 100%; min-height: 100%; }
 
 		body {
-			width: 100%; min-height: 100%;
-			padding: 15px;
+			width: 100%; height: 100%; min-height: 100%;
+			margin: 0 auto;
+			max-width: 540px;
 			
 			background: #141414 url('/img/background.jpg') no-repeat center center;
 			background-size: cover;
@@ -48,12 +49,14 @@
 			text-align:center;
 			-webkit-font-smoothing: antialiased;
 			font-smoothing: antialiased;
+
+			display: table;
 		}
 
 		main {
-			max-width:540px;
-			margin: 160px auto 0 auto;
-			margin-top: 14vw;
+			display: table-cell;
+			vertical-align: middle;
+			padding: 20px;
 		}
 	
 		h1 {
@@ -76,7 +79,7 @@
 		}
 
 		.is-desktop .call-to-action {
-			width: 118px; height: 35px;
+			width: 128px; height: 35px;
 			overflow: hidden;
 
 			transition: width 0.25s 0.8s;
@@ -87,6 +90,10 @@
 			width: 186px;
 			transition: width 0.25s;
 			-webkit-transition: width 0.25s;
+		}
+
+		.call-to-action .slide-hover {
+			text-transform: uppercase;
 		}
 
 		.call-to-action:hover .slide-hover {
@@ -117,7 +124,7 @@
 
 			.call-to-action a:hover { text-decoration: none; }
 
-		footer { margin-top: 90px; }
+		footer { margin-top: 50px; }
 
 		.icon {
 			margin: 0 9px 18px 9px;
@@ -142,29 +149,28 @@
 		<img src="/img/logo-small@2x.png" alt="IDEAID" width="151" height="66">
 		<h1>Donate your brain</h1>
 		<p>
-			... and compete to win 50,000 DKK. We're looking for the
+			... and compete to win the grand prize. We're looking for the
 			most innovative minds within software development, design
-			and ideation to help make the world a better place
+			and concept development to help make the world a better place
 			from <span class="dont-break">February 28<sup>th</sup> - March 2<sup>nd</sup></span>
 		</p>
 
 		<div class="call-to-action">
 			<span class="show-desktop">
 				<span class="slide-hover" onmouseover="if(!hover) _gaq.push(['_trackEvent', 'Calendar', 'Hover (Desktop)']); hover = true;">Save the date</span>				
-				<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Desktop)', 'Google']);">GOOGLE</a>
+				<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Desktop)', 'Google']);" target="_blank">GOOGLE</a>
 				<em>or</em>
-				<a href="/webcal/IDEAID.ics" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Desktop)', 'iCalendar']);">iCALENDAR</a>
+				<a href="/webcal/IDEAID.ics" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Desktop)', 'iCalendar']);" target="_blank">iCALENDAR</a>
 			</span>
-			<a class="show-mobile-chrome" href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Mobile Chrome)', 'Google']);">Save the date</a>
-			<a class="show-mobile-safari" href="/webcal/IDEAID.ics" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Mobile Safari)', 'Google']);">Save the date</a>
+			<a class="show-mobile-chrome" href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20compete%20to%20win%2050%2C000%20DKK.%20We%E2%80%99re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20ideation%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Mobile Chrome)', 'Google']);" target="_blank">Save the date</a>
+			<a class="show-mobile-safari" href="/webcal/IDEAID.ics" onclick="_gaq.push(['_trackEvent', 'Calendar', 'Add (Mobile Safari)', 'Google']);" target="_blank">Save the date</a>
 		</div>
 	
 
 		<footer>
 			<a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook">
 				<img src="/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="32" height="32">
-			</a>
-			<a href="http://twitter.com/ideaidcph" class="icon" title="IDEAID on Twitter">
+			</a><a href="http://twitter.com/ideaidcph" class="icon" title="IDEAID on Twitter">
 				<img src="/img/twitter-icon@2x.png" alt="IDEAID on Twitter" width="32" height="32">
 			</a>
 		</footer>
