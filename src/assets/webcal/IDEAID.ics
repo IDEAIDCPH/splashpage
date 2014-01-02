@@ -1,15 +1,21 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:ideaid.org WebCal
+PRODID:IDEAID.org Event
 X-WR-CALNAME:IDEAID
 X-WR-TIMEZONE:Europe/Copenhagen
 BEGIN:VEVENT
 DTSTAMP:20131222T153222Z
-UID:20131222T153222Z-380069865@marudot.com
+UID:20131222T153222Z-380069865@ideaid.org
 DTSTART;TZID=Europe/Copenhagen:20140228T180000
 DTEND;TZID=Europe/Copenhagen:20140302T130000
 SUMMARY:IDEAID 2014
 DESCRIPTION:Donate your brain and compete to win the grand prize. We’re looking for the most innovative minds within software development\, design and concept development to help make the world a better place.\n\nFor more information see http://ideaid.org/
 LOCATION:Kforum\, Gammel Kongevej 3E\, Baghuset\, 4. sal\, 1610 København V\, Denmark
+URL;VALUE=URI:http://ideaid.org
+BEGIN:VALARM
+TRIGGER:20140201T163000Z
+ACTION:DISPLAY
+DESCRIPTION:Apply for IDEAID
+END:VALARM
 END:VEVENT
 END:VCALENDAR
