@@ -1,189 +1,185 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IDEAID 2014</title>
-	
-	<meta name="description" content="Donate your brain and compete to win 50,000 DKK. From February 28th - March 2nd">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
-	<![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IDEAID 2014</title>
+    
+    <meta name="description" content="Donate your brain and compete to win 50,000 DKK. From February 28th - March 2nd">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <![endif]-->
 
-	<script>
-		var hover = false;
+    <script>
+        var hover = false;
 
-		function isDesktop() { 	return !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/); }
-		function isMobileSafari() { return navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/); }
-		function isMobileChrome() { return navigator.userAgent.match('CriOS') || navigator.userAgent.match(/Chrome\/[0-9\.]+ Mobile/); }
+        function isDesktop() {      return !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/); }
+        function isMobileSafari() { return navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/); }
+        function isMobileChrome() { return navigator.userAgent.match('CriOS') || navigator.userAgent.match(/Chrome\/[0-9\.]+ Mobile/); }
 
-		var htmlElm = document.documentElement;
+        var htmlElm = document.documentElement;
 
-			 if(isDesktop()) 	  htmlElm.className += 'is-desktop';
-		else if(isMobileChrome()) htmlElm.className += 'is-mobile-chrome';
-		else if(isMobileSafari()) htmlElm.className += 'is-mobile-safari';
-		else 					  htmlElm.className += 'device-fallback';
-	</script>
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Doppio+One">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
-	<style>
-		* { 
-			box-sizing: border-box; 
-			transition-timing-function: ease-in-out;
-			-webkit-transition-timing-function: ease-in-out;
-		}
+             if(isDesktop())      htmlElm.className += 'is-desktop';
+        else if(isMobileChrome()) htmlElm.className += 'is-mobile-chrome';
+        else if(isMobileSafari()) htmlElm.className += 'is-mobile-safari';
+        else                      htmlElm.className += 'device-fallback';
+    </script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Doppio+One">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
+    <style>
+        * { 
+            box-sizing: border-box; 
+            transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+        }
 
-		html { width: 100%; height: 100%; min-height: 100%; }
+        html { width: 100%; height: 100%; min-height: 100%; }
 
-		body {
-			width: 100%; height: 100%; min-height: 100%;
-			margin: 0 auto;
-			max-width: 540px;
-			
-			background: #141414 url('/img/background.jpg') no-repeat center center;
-			background-size: cover;
-			
-			font: 21px/1.4 'Doppio One', sans-serif;
-			color: #f1f1f1;
-			text-align:center;
-			-webkit-font-smoothing: antialiased;
-			font-smoothing: antialiased;
+        body {
+            width: 100%; height: 100%; min-height: 100%;
+            margin: 0 auto;
+            max-width: 540px;
+            
+            background: #141414 url('/img/background.jpg') no-repeat center center;
+            background-size: cover;
+            
+            font: 21px/1.4 'Doppio One', sans-serif;
+            color: #f1f1f1;
+            text-align:center;
+            -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
 
-			display: table;
-		}
+            display: table;
+        }
 
-		main {
-			display: table-cell;
-			vertical-align: middle;
-			padding: 20px;
-		}
-	
-		h1 {
-			margin-bottom: 16px;
+        main {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+        }
+    
+        h1 {
+            margin-bottom: 16px;
 
-			font-size: 41px;
-		}
-		
-		.call-to-action {
-			padding: 0 10px;
-			display: inline-block;
-				
-			border-radius: 7px;
-			background: #47da54; 
+            font-size: 41px;
+        }
+        
+        .call-to-action {
+            padding: 0 10px;
+            display: inline-block;
+                
+            border-radius: 7px;
+            background: #47da54; 
 
-			color: #000;
-			font-size: 14px;
-			line-height: 35px;
-			vertical-align: middle;
-		}
+            color: #000;
+            font-size: 14px;
+            line-height: 35px;
+            vertical-align: middle;
+        }
 
-		.is-desktop .call-to-action {
-			width: 128px; height: 35px;
-			overflow: hidden;
+        .is-desktop .call-to-action {
+            width: 128px; height: 35px;
+            overflow: hidden;
 
-			transition: width 0.25s 0.8s;
-			-webkit-transition: width 0.25s 0.8s;
-		}
+            transition: width 0.25s 0.8s;
+            -webkit-transition: width 0.25s 0.8s;
+        }
 
-		.is-desktop .call-to-action:hover {
-			width: 186px;
-			transition: width 0.25s;
-			-webkit-transition: width 0.25s;
-		}
+        .is-desktop .call-to-action:hover {
+            width: 186px;
+            transition: width 0.25s;
+            -webkit-transition: width 0.25s;
+        }
 
-		.call-to-action .slide-hover {
-			text-transform: uppercase;
-		}
+        .call-to-action:hover .slide-hover {
+            margin-top: -150%;
+            transition: margin-top 1s 0.2s;
+            -webkit-transition: margin-top 1s 0.2s;
+        }
+            .call-to-action .slide-hover {
+                display: block;
+                transition: margin-top 1s;
+                -webkit-transition: margin-top 1s;
+            }
 
-		.call-to-action:hover .slide-hover {
-			margin-top: -150%;
-			transition: margin-top 1s 0.2s;
-			-webkit-transition: margin-top 1s 0.2s;
-		}
-			.call-to-action .slide-hover {
-				display: block;
-				transition: margin-top 1s;
-				-webkit-transition: margin-top 1s;
-			}
+            .call-to-action em {
+                font-style: normal;
+                font-size: 10px;
+                margin-top: -30px;
+            }
+            
+            .call-to-action a {
+                padding: 5px;
+                display: inline-block;
 
-			.call-to-action em {
-				font-style: normal;
-				font-size: 10px;
-				margin-top: -30px;
-			}
-			
-			.call-to-action a {
-				padding: 5px;
-				display: inline-block;
+                color: inherit;
+                line-height: inherit;
+                vertical-align: inherit;
+            }
 
-				color: inherit;
-				line-height: inherit;
-				vertical-align: inherit;
-			}
+            .call-to-action a:hover { text-decoration: none; }
 
-			.call-to-action a:hover { text-decoration: none; }
+        footer { margin-top: 50px; }
 
-		footer { margin-top: 50px; }
-
-		.icon {
-			margin: 0 9px 18px 9px;
-			display: inline-block;
-		}
-		
-		.show-desktop, 
-		.show-mobile-chrome, 
-		.show-mobile-safari,
-		.device-fallback .slide-hover {display: none !important;}
-		
-		.is-desktop .show-desktop,
-		.is-mobile-chrome .show-mobile-chrome,
-		.is-mobile-safari .show-mobile-safari,
-		.device-fallback .show-desktop {display: inherit !important;}
-	
-		.dont-break { white-space: nowrap; }
-	</style>
+        .icon {
+            margin: 0 9px 18px 9px;
+            display: inline-block;
+        }
+        
+        .show-desktop, 
+        .show-mobile-chrome, 
+        .show-mobile-safari,
+        .device-fallback .slide-hover {display: none !important;}
+        
+        .is-desktop .show-desktop,
+        .is-mobile-chrome .show-mobile-chrome,
+        .is-mobile-safari .show-mobile-safari,
+        .device-fallback .show-desktop {display: inherit !important;}
+    
+        .dont-break { white-space: nowrap; }
+    </style>
 </head>
 <body>
-	<main>
-		<img src="/img/logo-small@2x.png" alt="IDEAID" width="151" height="66">
-		<h1>Donate your brain</h1>
-		<p>
-			... and compete to win the grand prize. We're looking for the
-			most innovative minds within software development, design
-			and concept development to help make the world a better place
-			from <span class="dont-break">February 28<sup>th</sup> - March 2<sup>nd</sup></span>
-		</p>
+    <main>
+        <img src="/img/logo-small@2x.png" alt="IDEAID" width="151" height="66">
+        <h1>Donate your brain</h1>
+        <p>
+            ... and compete to win the grand prize. We're looking for the
+            most innovative minds within software development, design
+            and concept development to help make the world a better place
+            from <span class="dont-break">February 28<sup>th</sup> - March 2<sup>nd</sup></span>
+        </p>
 
-		<div class="call-to-action">
-			<span class="show-desktop">
-				<span class="slide-hover" onmouseover="if(!hover) ga('send', 'event', 'calendar', 'hover', 'desktop'); hover = true;">Save the date</span>				
-				<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20and%20compete%20to%20win%20the%20grand%20prize.%20We%27re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20concept%20development%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="ga('send', 'event', 'calendar', 'add google', 'desktop');" target="_blank">GOOGLE</a>
-				<em>or</em>
-				<a href="/webcal/IDEAID.ics" onclick="ga('send', 'event', 'calendar', 'add icalendar', 'desktop');">iCALENDAR</a>
-			</span>
-			<a class="show-mobile-chrome" href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20and%20compete%20to%20win%20the%20grand%20prize.%20We%27re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20concept%20development%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="ga('send', 'event', 'calendar', 'add google', 'mobile chrome');" target="_blank">Save the date</a>
-			<a class="show-mobile-safari" href="/webcal/IDEAID.ics" onclick="ga('send', 'event', 'calendar', 'add icalendar', 'mobile safari');">Save the date</a>
-		</div>
-	
+        <div class="call-to-action">
+            <span class="show-desktop">
+                <span class="slide-hover" onmouseover="if(!hover) ga('send', 'event', 'calendar', 'hover', 'desktop'); hover = true;">SAVE THE DATE</span>              
+                <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20and%20compete%20to%20win%20the%20grand%20prize.%20We%27re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20concept%20development%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="ga('send', 'event', 'calendar', 'add google', 'desktop');" target="_blank">GOOGLE</a>
+                <em>or</em>
+                <a href="/webcal/IDEAID.ics" onclick="ga('send', 'event', 'calendar', 'add icalendar', 'desktop');">iCALENDAR</a>
+            </span>
+            <a class="show-mobile-chrome" href="http://www.google.com/calendar/event?action=TEMPLATE&text=IDEAID%202014&dates=20140228T170000Z/20140302T120000Z&details=Donate%20your%20brain%20and%20and%20compete%20to%20win%20the%20grand%20prize.%20We%27re%20looking%20for%20the%20most%20innovative%20minds%20within%20software%20development%2C%20design%20and%20concept%20development%20to%20help%20make%20the%20world%20a%20better%20place.%0A%0AFor%20more%20information%20see%20http%3A%2F%2Fideaid.org%2F&location=Kforum%2C%20Gammel%20Kongevej%203E%2C%20Baghuset%2C%204.%20sal%2C%201610%20K%C3%B8benhavn%20V%2C%20Denmark&trp=true&sprop=Ideaid.org&sprop=name:www.ideaid.org" onclick="ga('send', 'event', 'calendar', 'add google', 'mobile chrome');" target="_blank">SAVE THE DATE</a>
+            <a class="show-mobile-safari" href="/webcal/IDEAID.ics" onclick="ga('send', 'event', 'calendar', 'add icalendar', 'mobile safari');">SAVE THE DATE</a>
+        </div>
+    
 
-		<footer>
-			<a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook">
-				<img src="/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="32" height="32">
-			</a><a href="http://twitter.com/ideaidcph" class="icon" title="IDEAID on Twitter">
-				<img src="/img/twitter-icon@2x.png" alt="IDEAID on Twitter" width="32" height="32">
-			</a>
-		</footer>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.7/fastclick.min.js"></script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <footer>
+            <a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook">
+                <img src="/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="32" height="32">
+            </a><a href="http://twitter.com/ideaidcph" class="icon" title="IDEAID on Twitter">
+                <img src="/img/twitter-icon@2x.png" alt="IDEAID on Twitter" width="32" height="32">
+            </a>
+        </footer>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.7/fastclick.min.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-46707863-1', 'ideaid.org');
-		  ga('send', 'pageview');
-		</script>
-	</main>
+          ga('create', 'UA-46707863-1', 'ideaid.org');
+          ga('send', 'pageview');
+        </script>
+    </main>
 </body>
 </html>
