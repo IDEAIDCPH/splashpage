@@ -1,18 +1,29 @@
+dist
+publish
+
 lib-cov
 *.seed
 *.log
-*.csv
 *.dat
 *.out
 *.pid
 *.gz
+*.idea
 
 pids
 logs
 results
+build
+dump
 
-npm-debug.log
+.sass-cache
 node_modules
-tmp
-dist
-publish
+
+#OS X specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+._*
